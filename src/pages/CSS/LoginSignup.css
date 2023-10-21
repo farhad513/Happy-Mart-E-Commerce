@@ -1,0 +1,69 @@
+.login_signup{
+    width: 100%;
+    height: 100vh;
+    background:#fce3fc;
+    padding-top: 80px;
+}
+.container{
+    width: 540px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+.container h1{
+    margin: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login_fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login_fields input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.container button{
+    /* width: 150px; */
+    width: 100%;
+    height: 50px;
+    background:rgb(75, 75, 221);
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid rgb(75, 75, 221);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container button:active{
+    background-color: blue;
+}
+.btn_account{
+    text-align: center;
+    margin-top: 10px;
+}
+.btn_account span{
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}

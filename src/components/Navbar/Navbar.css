@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    box-shadow: 0 1px 3px -2px black;
+    padding: 0 40px;
+}
+
+.navbar_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.navbar_logo h5{
+font-size: 25px;
+color: tomato;
+}
+
+.nav_manu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-style: 20px;
+    font-weight: 600;
+}
+
+.nav_manu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav_manu hr{
+border: none;
+width: 80%;
+height: 2px;
+border-radius: 10px;
+background:#FF4141;
+}
+
+.nav_login_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* padding-right: 40px; */
+}
+.nav_login_card button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: teal;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #717171;
+    cursor: pointer;
+}
+
+.nav_login_card button:active{
+    background: rgb(61, 202, 202);
+}
+
+.nav_cart_count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: -51px;
+    border-radius: 11px;
+    font-size: 14px;
+     background: red;
+     color: white;
+}

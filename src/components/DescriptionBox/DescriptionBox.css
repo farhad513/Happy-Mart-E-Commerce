@@ -1,0 +1,37 @@
+.description_box{
+    margin: 120px 170px;
+}
+
+
+.description_box_navigator{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.description_box_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+}
+
+.description_box_nav.fade{
+    color: #555;
+    background: #FBFBFB;
+    width: 171px;
+    height: 70px;
+}
+
+.description_box_descripiton{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    margin-bottom: 70px;
+}

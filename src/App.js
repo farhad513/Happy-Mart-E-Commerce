@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Shop from "./pages/Shop";
+import ShopCategory from "./pages/ShopCategory";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Footer from "./components/Footer/Footer";
+import mans_banner from "./assets/banner_mens.png";
+import woman_banner from "./assets/banner_women.png";
+import kids_banner from "./assets/banner_kids.png";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/shop" element={<Shop />} />
+        <Route
+          path="/mans"
+          element={<ShopCategory banner={mans_banner} category="men" />}
+        />
+        <Route
+          path="/woman"
+          element={<ShopCategory banner={woman_banner} category="women" />}
+        />
+        <Route
+          path="/kids"
+          element={<ShopCategory banner={kids_banner} category="kid" />}
+        />
+        <Route path="/product" element={<Product />}>
+          <Route path=":productId" element={<Product />} />
+        </Route>
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
